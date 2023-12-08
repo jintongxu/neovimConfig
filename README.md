@@ -8,6 +8,7 @@ sudo chmod +x install.sh
 
 ./install.sh
 ```
+然后进入nvimm的命令模式``:Mason``，下载对应语言的LSP（代码提示）。光标移动到对应的LSP，然后按**i**下载，按**X**卸载。
 
 # 二、当前nvim快捷键
 
