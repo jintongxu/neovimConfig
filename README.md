@@ -1,3 +1,14 @@
+# 使用教程
+```bash
+git clone https://github.com/xjintong/neovimConfig.git
+
+cd neovimConfig
+
+sudo chmod +x install.sh
+
+./install.sh
+```
+
 # 当前nvim快捷键
 
 ## 复制、粘贴、删除
