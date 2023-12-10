@@ -193,3 +193,17 @@ Comment.nvim插件的默认快捷方式。
 ### 查看源代码
 
 - **list 函数名**：将显示“函数名”所在函数的源代码，如：list main
+
+
+# 四、个人其他配置
+
+- READEM.md生成toc目录
+终端执行
+```bash
+mdtoc README.md的路径
+```
+将生成的目录复制到README中去就行了。
+---([github项目地址](https://github.com/ekalinin/github-markdown-toc))
+
+
+

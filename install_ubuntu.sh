@@ -58,4 +58,16 @@ else
 	sudo apt install unzip
 fi
 
+if command -v wget &>/dev/null; then
+	echo "wget已经安装，无需再次安装"
+else
+	echo "wget未安装，开始安装wget"
+	sudo apt install wget
+fi
+
+echo "安装一下其他配置"
+echo "安装配置gh-md-toc"
+sudo wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -O /usr/bin/mdtoc
+sudo chmod a+x /usr/bin/mdtoc
+
 nvim
