@@ -40,7 +40,24 @@ else
 	echo "$config_folder created successfully."
 fi
 
-git clone https://github.com/xjintong/neovimConfig.git ~/.config/nvim
+while true; do
+	echo "你是作者本人使用吗？（y/n)"
+	read choice
+
+	if [ "$choice" == "y" ]; then
+		cd ~/.config
+		git clone git@github.com:xjintong/neovimConfig.git
+		mv neovimConfig nvim
+		break
+	elif [ "$choice" = "n" ]; then
+		cd ~/.config
+		git clone https://github.com/xjintong/neovimConfig.git
+		mv neovimConfig nvim
+		break
+	else
+		echo "Invalid choice. Please enter 'y' or 'n'."
+	fi
+done
 
 echo "安装一些依赖"
 
@@ -64,10 +81,5 @@ else
 	echo "wget未安装，开始安装wget"
 	sudo apt install wget
 fi
-
-echo "安装一下其他配置"
-echo "安装配置gh-md-toc"
-sudo wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -O /usr/bin/mdtoc
-sudo chmod a+x /usr/bin/mdtoc
 
 nvim

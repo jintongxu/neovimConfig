@@ -21,20 +21,36 @@ if [ -d "$nvim_config_folder" ]; then
 	echo "Deleting $nvim_config_folder"
 	rm -rf "$nvim_config_folder"
 	echo "$nvim_config_folder deleted successfully."
-else
-	echo "$nvim_config_folder does not exist. Create new"
 fi
 
 # 检查是否存在 ~/.config 文件夹
 if [ -d "$config_folder" ]; then
 	echo "$config_folder already exists. Changing directory to $config_folder"
 else
-	echo "Creating $config_folder and changing directory to it"
+	echo "Create $config_folder and changing directory to it"
 	mkdir -p "$config_folder"
-	echo "$config_folder created successfully."
+	cd "$config_folder"
+	echo "$config_folder create successfully."
 fi
 
-git clone https://github.com/xjintong/neovimConfig.git ~/.config/nvim
+while true; do
+	echo "你是作者本人使用吗？（y/n)"
+	read choice
+
+	if [ "$choice" == "y" ]; then
+		cd ~/.config
+		git clone git@github.com:xjintong/neovimConfig.git
+		mv neovimConfig nvim
+		break
+	elif [ "$choice" = "n" ]; then
+		cd ~/.config
+		git clone https://github.com/xjintong/neovimConfig.git
+		mv neovimConfig nvim
+		break
+	else
+		echo "Invalid choice. Please enter 'y' or 'n'."
+	fi
+done
 
 echo "安装一些依赖"
 
@@ -58,10 +74,5 @@ else
 	echo "wget未安装，开始安装wget"
 	sudo pacman -S wget
 fi
-
-echo "安装一下其他配置"
-echo "安装配置gh-md-toc"
-sudo wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -O /usr/bin/mdtoc
-sudo chmod a+x /usr/bin/mdtoc
 
 nvim
