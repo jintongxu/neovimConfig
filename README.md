@@ -5,6 +5,7 @@
 - [一、使用教程](#%E4%B8%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
   * [Ubuntu](#ubuntu)
   * [ArchLinux](#archlinux)
+  * [Mason](#mason)
 - [二、当前nvim快捷键](#%E4%BA%8C%E5%BD%93%E5%89%8Dnvim%E5%BF%AB%E6%8D%B7%E9%94%AE)
   * [复制、粘贴、删除](#%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E5%88%A0%E9%99%A4)
     + [复制](#%E5%A4%8D%E5%88%B6)
@@ -43,6 +44,8 @@ sudo chmod +x install_ubuntu.sh
 
 ./install_ubuntu.sh
 ```
+最后安装Mason的LSP，见后文。
+
 ## ArchLinux
 ```bash
 git clone https://github.com/xjintong/neovimConfig.git
@@ -52,10 +55,22 @@ cd neovimConfig
 sudo chmod +x install_arch.sh 
 
 ./install_arch.sh
-
 ```
+最后安装Mason的LSP，见后文。
 
+## Mason
 然后进入nvimm的命令模式``:Mason``，下载对应语言的LSP（代码提示）。光标移动到对应的LSP，然后按 **i** 下载，按 **X** 卸载。
+
+当前使用的**LSP**：
+- clangd（c/c++)
+- cmake-language-server
+- docker-compose-language-server
+- dockerfile-language-server
+- markdown-toc
+记得进入命令模式后输入**!**，表示该命令为终端命令。
+![Snipaste_2023-12-12_10-35-43](https://img.xujintong.com/2023/12/12/h4k5if.webp)
+
+- python-lsp-server
 
 # 二、当前nvim快捷键
 
