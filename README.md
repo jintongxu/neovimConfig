@@ -12,6 +12,7 @@
     + [粘贴](#%E7%B2%98%E8%B4%B4)
     + [删除](#%E5%88%A0%E9%99%A4)
   * [插入模式](#%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F)
+  * [代码间快速跳转](#%E4%BB%A3%E7%A0%81%E9%97%B4%E5%BF%AB%E9%80%9F%E8%B7%B3%E8%BD%AC)
   * [快速移动](#%E5%BF%AB%E9%80%9F%E7%A7%BB%E5%8A%A8)
   * [查找](#%E6%9F%A5%E6%89%BE)
   * [文件树](#%E6%96%87%E4%BB%B6%E6%A0%91)
@@ -27,7 +28,6 @@
       - [查看源代码](#%E6%9F%A5%E7%9C%8B%E6%BA%90%E4%BB%A3%E7%A0%81)
   * [3.2 lazygit快捷键](#32-lazygit%E5%BF%AB%E6%8D%B7%E9%94%AE)
   * [杂](#%E6%9D%82)
-    + [READEM.md生成toc目录](#reademmd%E7%94%9F%E6%88%90toc%E7%9B%AE%E5%BD%95)
 
 <!-- tocstop -->
 
@@ -169,6 +169,12 @@ Comment.nvim插件的默认快捷方式。
 ## 其他
 - **]b**：打开了多个文件，跳到当前文件的右边文件光标位置
 - **[b**：和上一个差不多，只是跳到左边的文件
+- <C-s>：保存文件
+- <leader>fn：创建新文件
+- <leader>ft：Terminal命令 (root dir)
+- <leader>fT：Terminal命令 (cwd)
+- <C-/>：Hide Terminal
+- :file filename：将当前文件名改为filename
 
 # 三、个人其他配置使用
 ## 3.1 cgdb和gdb的快捷键
@@ -231,13 +237,5 @@ Comment.nvim插件的默认快捷方式。
 
 
 ## 杂
-### READEM.md生成toc目录
-终端执行
-```bash
-mdtoc README.md的路径
-```
-将生成的目录复制到README中去就行了。
----([github项目地址](https://github.com/ekalinin/github-markdown-toc))
-
 
 
