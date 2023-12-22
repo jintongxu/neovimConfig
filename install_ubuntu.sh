@@ -2,7 +2,7 @@
 
 # 检查是否存在 add-apt-repository 命令
 if ! command -v add-apt-repository &>/dev/null; then
-	echo "add-apt-repository command not found."
+	echo "add-apt-repository command not found. try to install software-properties-common"
 
 	# 尝试安装 software-properties-common 并更新
 	if command -v apt &>/dev/null; then
