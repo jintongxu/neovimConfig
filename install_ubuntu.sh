@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# 检查是否存在 add-apt-repository 命令
+if ! command -v add-apt-repository &>/dev/null; then
+	echo "add-apt-repository command not found."
+
+	# 尝试安装 software-properties-common 并更新
+	if command -v apt &>/dev/null; then
+		sudo apt update
+		sudo apt install -y software-properties-common
+		echo "software-properties-common installed successfully."
+	else
+		echo "apt command not found. Please install software-properties-common manually and run sudo apt update."
+		exit 1
+	fi
+else
+	echo "add-apt-repository command is available."
+fi
+
 echo "检查是否已安装 Neovim"
 
 if command -v nvim &>/dev/null; then
@@ -31,6 +48,8 @@ else
 	echo "$nvim_config_folder does not exist. Create new"
 fi
 
+config_folder="$HOME/.config"
+
 # 检查是否存在 ~/.config 文件夹
 if [ -d "$config_folder" ]; then
 	echo "$config_folder already exists. Changing directory to $config_folder"
@@ -39,6 +58,8 @@ else
 	mkdir -p "$config_folder"
 	echo "$config_folder created successfully."
 fi
+
+cd ~/.config
 
 while true; do
 	echo "你是作者本人使用吗？（y/n)"
@@ -80,6 +101,13 @@ if command -v wget &>/dev/null; then
 else
 	echo "wget未安装，开始安装wget"
 	sudo apt install wget
+fi
+
+if command -v curl &>/dev/null; then
+	echo "curl已经安装，无需再次安装"
+else
+	echo "curl未安装，开始安装curl"
+	sudo apt install curl
 fi
 
 nvim
