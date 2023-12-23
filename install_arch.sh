@@ -77,4 +77,7 @@ fi
 
 sudo pacman -S ripgrep
 
+echo "安装lazygit"
+sudo pacman -S lazygit
+
 nvim

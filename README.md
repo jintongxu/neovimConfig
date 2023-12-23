@@ -2,6 +2,34 @@
 
 <!-- toc -->
 
+- [一、使用教程](#%E4%B8%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+  * [Ubuntu](#ubuntu)
+  * [ArchLinux](#archlinux)
+  * [Mason](#mason)
+- [二、当前nvim快捷键](#%E4%BA%8C%E5%BD%93%E5%89%8Dnvim%E5%BF%AB%E6%8D%B7%E9%94%AE)
+  * [复制、粘贴、删除](#%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E5%88%A0%E9%99%A4)
+    + [复制/剪切](#%E5%A4%8D%E5%88%B6%E5%89%AA%E5%88%87)
+    + [粘贴](#%E7%B2%98%E8%B4%B4)
+    + [删除](#%E5%88%A0%E9%99%A4)
+  * [插入模式](#%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F)
+  * [代码间快速跳转](#%E4%BB%A3%E7%A0%81%E9%97%B4%E5%BF%AB%E9%80%9F%E8%B7%B3%E8%BD%AC)
+  * [快速移动](#%E5%BF%AB%E9%80%9F%E7%A7%BB%E5%8A%A8)
+  * [search](#search)
+  * [文件树](#%E6%96%87%E4%BB%B6%E6%A0%91)
+  * [buffer](#buffer)
+  * [注释](#%E6%B3%A8%E9%87%8A)
+  * [其他](#%E5%85%B6%E4%BB%96)
+    + [快速增加括号](#%E5%BF%AB%E9%80%9F%E5%A2%9E%E5%8A%A0%E6%8B%AC%E5%8F%B7)
+- [三、个人其他配置使用](#%E4%B8%89%E4%B8%AA%E4%BA%BA%E5%85%B6%E4%BB%96%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8)
+  * [3.1 cgdb和gdb的快捷键](#31-cgdb%E5%92%8Cgdb%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE)
+    + [cgdb](#cgdb)
+    + [gdb](#gdb)
+      - [断点](#%E6%96%AD%E7%82%B9)
+      - [打印表达式](#%E6%89%93%E5%8D%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+      - [查询运行信息](#%E6%9F%A5%E8%AF%A2%E8%BF%90%E8%A1%8C%E4%BF%A1%E6%81%AF)
+      - [查看源代码](#%E6%9F%A5%E7%9C%8B%E6%BA%90%E4%BB%A3%E7%A0%81)
+  * [3.2 lazygit快捷键](#32-lazygit%E5%BF%AB%E6%8D%B7%E9%94%AE)
+  * [杂](#%E6%9D%82)
 
 <!-- tocstop -->
 
