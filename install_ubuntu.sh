@@ -110,4 +110,5 @@ else
 	sudo apt install curl
 fi
 
+sudo apt install ripgrep
 nvim

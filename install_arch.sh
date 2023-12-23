@@ -75,4 +75,6 @@ else
 	sudo pacman -S wget
 fi
 
+sudo pacman -S ripgrep
+
 nvim
