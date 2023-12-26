@@ -67,12 +67,12 @@ while true; do
 
 	if [ "$choice" == "y" ]; then
 		cd ~/.config
-		git clone git@github.com:xjintong/neovimConfig.git
+		git clone git@github.com:jintongxu/neovimConfig.git
 		mv neovimConfig nvim
 		break
 	elif [ "$choice" = "n" ]; then
 		cd ~/.config
-		git clone https://github.com/xjintong/neovimConfig.git
+		git clone https://github.com/jintongxu/neovimConfig.git
 		mv neovimConfig nvim
 		break
 	else

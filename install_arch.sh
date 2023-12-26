@@ -38,13 +38,13 @@ while true; do
 	read choice
 
 	if [ "$choice" == "y" ]; then
-		cd ~/.config
-		git clone git@github.com:xjintong/neovimConfig.git
+		cd ~/.config git@github.com:jintongxu/neovimConfig.git
+		git clone
 		mv neovimConfig nvim
 		break
 	elif [ "$choice" = "n" ]; then
 		cd ~/.config
-		git clone https://github.com/xjintong/neovimConfig.git
+		git clone https://github.com/jintongxu/neovimConfig.git
 		mv neovimConfig nvim
 		break
 	else
@@ -76,8 +76,5 @@ else
 fi
 
 sudo pacman -S ripgrep
-
-echo "安装lazygit"
-sudo pacman -S lazygit
 
 nvim
