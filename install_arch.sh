@@ -38,8 +38,8 @@ while true; do
 	read choice
 
 	if [ "$choice" == "y" ]; then
-		cd ~/.config git@github.com:jintongxu/neovimConfig.git
-		git clone
+		cd ~/.config
+		git clone git@github.com:jintongxu/neovimConfig.git
 		mv neovimConfig nvim
 		break
 	elif [ "$choice" = "n" ]; then
