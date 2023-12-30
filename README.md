@@ -125,6 +125,7 @@ sudo chmod +x install_arch.sh
 - gy：光标移动到结构体，快速跳转到结构体定义
 - gr：查看所有引用
 - gp：jump back in the tag stack，绑定的<ctrl-t>
+- ge：跳到上一个单词的的最后一个字母
 - [ + {：快速跳转到前一个 {
 - [ + (：快速跳转到前一个 (
 - [ + [：快速跳转到前一个 [
