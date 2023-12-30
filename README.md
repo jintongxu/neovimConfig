@@ -124,6 +124,7 @@ sudo chmod +x install_arch.sh
 - gD：光标移动到函数名，快速跳转到函数声明
 - gy：光标移动到结构体，快速跳转到结构体定义
 - gr：查看所有引用
+- gp：jump back in the tag stack，绑定的<ctrl-t>
 - [ + {：快速跳转到前一个 {
 - [ + (：快速跳转到前一个 (
 - [ + [：快速跳转到前一个 [
