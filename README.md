@@ -38,7 +38,7 @@
 ## Ubuntu
 用apt包管理器的都可以用这个
 ```bash
-git clone https://github.com/xjintong/neovimConfig.git
+git clone https://github.com/jintongxu/tmuxConfig.git 
 
 cd neovimConfig
 
@@ -50,7 +50,7 @@ sudo chmod +x install_ubuntu.sh
 
 ## ArchLinux
 ```bash
-git clone https://github.com/xjintong/neovimConfig.git
+git clone https://github.com/jintongxu/tmuxConfig.git 
 
 cd neovimConfig
 
@@ -85,6 +85,8 @@ sudo chmod +x install_arch.sh
 - **nyy**：n是要复制的行数，从当前行开始
 
 - **:%y**：复制整个文件
+- 复制一个单词，然后在另一个地方覆盖单词 ----   **yiw** 要复制的单词, 移动到要替换的单词 view 替换，移动到另一个要替换的单词 **viw"0p** 继续替换。
+
 
 ### 粘贴
 
@@ -103,6 +105,8 @@ sudo chmod +x install_arch.sh
 - **D**：删除从当前光标位置到行尾
 - **x**：删除当前光标位置的字符
 - **d + shift + g**：删除光标所在行到文件末尾
+- dw：从光标当前位置开始删除，直到删除到单词最后
+- daw：删除光标所在的单词
 
 ## 插入模式
 
