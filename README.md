@@ -242,10 +242,24 @@ Comment.nvim插件的默认快捷方式。
 - <leader>mc: 关闭当前代码函数大纲
 
 ### 快速增加括号
+尽量使用右边的,例如) } 这样括号和单词间不会有空格
 - ysw + " / ( / {：光标移动到单词的一个字母，快速给这个单词增加""或者()。或者v选择要括的区域
+- ysiw + ".. 给当前单词增加
+- yss + "... 整行增加
+- ys$ + "..  当前位置到行尾增加
 - ds + "  ( { ：删除最近的一套"" () {}
 - cs + 旧的包围的（"" ()）+ 新的包围的：可以替换括号，"" --> ()
 - csf：快速修改函数调用的调用函数名. test() --> haha()
+
+    Old text                    Command         New text
+--------------------------------------------------------------------------------
+    surr*ound_words             ysiw)           (surround_words)
+    *make strings               ys$"            "make strings"
+    [delete ar*ound me!]        ds]             delete around me!
+    remove <b>HTML t*ags</b>    dst             remove HTML tags
+    'change quot*es'            cs'"            "change quotes"
+    <b>or tag* types</b>        csth1<CR>       <h1>or tag types</h1>
+    delete(functi*on calls)     dsf             function calls
 
 # 三、个人其他配置使用
 ## 3.1 cgdb和gdb的快捷键
